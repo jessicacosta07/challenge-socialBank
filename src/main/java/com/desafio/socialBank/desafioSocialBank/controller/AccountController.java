@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.NoSuchElementException;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/accounts")
@@ -23,16 +24,16 @@ public class AccountController {
 
     @GetMapping("/list")
     @ApiOperation(value = "Retorna a lista de contas")
-    public List<Account> list(){
-        return accountService.listAllAccount();
+    public List<Account> listarContas(){
+        return accountService.searchAcoount();
     }
 
-    @GetMapping("/saldo_atual/{id}")
-    @ApiOperation(value = "Retorna uma única conta baseado no saldo")
+    @GetMapping("/{id}")
+    @ApiOperation(value = "Retorna conta pelo id")
     public ResponseEntity<Account> get(@PathVariable Integer id){
         try {
-            Account account= accountService.getAccount(id);
-            return new ResponseEntity<Account>(account, HttpStatus.OK);
+            Optional<Account> account= accountService.getAccount(id);
+            return new ResponseEntity<Account>(HttpStatus.OK);
         } catch (NoSuchElementException e) {
             return new ResponseEntity<Account>(HttpStatus.NOT_FOUND);
         }
@@ -46,10 +47,10 @@ public class AccountController {
     @ApiOperation(value = "Atualizar contas da lista")
     public ResponseEntity<?> update(@RequestBody Account account, @PathVariable Integer id) {
         try {
-            Account existAccount = accountService.getAccount(id);
+            Optional<Account> existAccount = accountService.getAccount(id);
             account.setId(id);
             accountService.saveAccount(account);
-            return new ResponseEntity<>(HttpStatus.OK);
+            return new ResponseEntity<Account>(HttpStatus.OK);
         } catch (NoSuchElementException e) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
