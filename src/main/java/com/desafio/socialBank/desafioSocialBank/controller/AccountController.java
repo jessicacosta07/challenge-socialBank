@@ -21,7 +21,7 @@ public class AccountController {
     @Autowired
     AccountService accountService;
 
-    @GetMapping("/lista")
+    @GetMapping("/list")
     @ApiOperation(value = "Retorna a lista de contas")
     public List<Account> list(){
         return accountService.listAllAccount();
