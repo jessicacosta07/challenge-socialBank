@@ -1,5 +1,16 @@
 # Desafio SocialBank
 
+# Requisitos
+
+* Java 11
+
+* H2 database
+
+* Spring Boot
+
+* Swagger
+
+
 # Executar a API
 
 `http://localhost:8080/swagger-ui.html`
