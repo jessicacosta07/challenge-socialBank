@@ -24,16 +24,16 @@ public class AccountController {
 
     @GetMapping("/list")
     @ApiOperation(value = "Retorna a lista de contas")
-    public List<Account> listarContas(){
-        return accountService.searchAcoount();
+    public List<Account> list() {
+        return accountService.listAllAccount();
     }
 
     @GetMapping("/{id}")
-    @ApiOperation(value = "Retorna conta pelo id")
-    public ResponseEntity<Account> get(@PathVariable Integer id){
+    @ApiOperation(value = "Retorna saldo atual pelo id")
+    public ResponseEntity<Account> get(@PathVariable Integer id) {
         try {
-            Optional<Account> account= accountService.getAccount(id);
-            return new ResponseEntity<Account>(HttpStatus.OK);
+            Account account = accountService.getAccount(id);
+            return new ResponseEntity<Account>(account, HttpStatus.OK);
         } catch (NoSuchElementException e) {
             return new ResponseEntity<Account>(HttpStatus.NOT_FOUND);
         }
@@ -47,7 +47,7 @@ public class AccountController {
     @ApiOperation(value = "Atualizar contas da lista")
     public ResponseEntity<?> update(@RequestBody Account account, @PathVariable Integer id) {
         try {
-            Optional<Account> existAccount = accountService.getAccount(id);
+            Account existAccount = accountService.getAccount(id);
             account.setId(id);
             accountService.saveAccount(account);
             return new ResponseEntity<Account>(HttpStatus.OK);
