@@ -20,7 +20,7 @@ A classe model mapea a tabela conta.
 
 * Repository
 
-A classe repository é uma interface que extende JPARepository.
+A classe repository é uma interface que estende JPARepository.
 
 ![image](https://user-images.githubusercontent.com/65916297/123187734-12fe9800-d471-11eb-94a7-1a72142fc463.png)
 
@@ -38,7 +38,7 @@ A classe controller contém as operações de CRUD: list, add, update e delete
 
 ![image](https://user-images.githubusercontent.com/65916297/123187922-81435a80-d471-11eb-9873-d653be50fc46.png)
 
-* Configuration: configuração para embutir o swaggerno spring Boot
+* Configuration: configuração para embutir o swagger no spring Boot
 
 ![image](https://user-images.githubusercontent.com/65916297/123188066-c1a2d880-d471-11eb-8506-7855edbc11e0.png)
 
