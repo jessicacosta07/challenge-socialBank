@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.NoSuchElementException;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/accounts")
@@ -28,8 +27,8 @@ public class AccountController {
         return accountService.listAllAccount();
     }
 
-    @GetMapping("/{id}")
-    @ApiOperation(value = "Retorna saldo atual pelo id")
+    @GetMapping("/{id}/saldo_atual")
+    @ApiOperation(value = "Retorna saldo atual")
     public ResponseEntity<Account> get(@PathVariable Integer id) {
         try {
             Account account = accountService.getAccount(id);
