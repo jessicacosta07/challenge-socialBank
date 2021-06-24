@@ -12,7 +12,7 @@
 
 # Classe
 
-* Model
+* Model: 
 
 ![image](https://user-images.githubusercontent.com/65916297/123187692-01b58b80-d471-11eb-837e-fb12ff170894.png)
 
