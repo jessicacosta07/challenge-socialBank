@@ -10,6 +10,26 @@
 
 * Swagger
 
+# Classe
+
+* Model
+
+![image](https://user-images.githubusercontent.com/65916297/123187692-01b58b80-d471-11eb-837e-fb12ff170894.png)
+
+* Repository
+
+![image](https://user-images.githubusercontent.com/65916297/123187734-12fe9800-d471-11eb-94a7-1a72142fc463.png)
+
+* Service
+
+![image](https://user-images.githubusercontent.com/65916297/123187783-2b6eb280-d471-11eb-8b73-1b1f19b878b5.png)
+
+* Controller
+
+![image](https://user-images.githubusercontent.com/65916297/123187869-5eb14180-d471-11eb-93fe-fab7d320d801.png)
+
+![image](https://user-images.githubusercontent.com/65916297/123187922-81435a80-d471-11eb-9873-d653be50fc46.png)
+
 
 # Executar a API
 
