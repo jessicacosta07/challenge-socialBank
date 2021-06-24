@@ -30,6 +30,9 @@
 
 ![image](https://user-images.githubusercontent.com/65916297/123187922-81435a80-d471-11eb-9873-d653be50fc46.png)
 
+* Configuration
+
+![image](https://user-images.githubusercontent.com/65916297/123188066-c1a2d880-d471-11eb-8506-7855edbc11e0.png)
 
 # Executar a API
 
