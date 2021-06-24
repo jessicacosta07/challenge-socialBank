@@ -6,7 +6,7 @@
 
 * H2 database
 
-* Spring Boot
+* Spring Initializr: https://start.spring.io/
 
 * Swagger
 
