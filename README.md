@@ -1,11 +1,11 @@
 # Challenge SocialBank
 
-# Skills
+## Skills
 
 ![Java Badge](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 ![Spring Badge](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
 
-# Class
+## Class
 
 * Model
 
@@ -37,10 +37,10 @@ The controller class contains the CRUD operations: list, add, update and delete
 
 ![image](https://user-images.githubusercontent.com/65916297/123188066-c1a2d880-d471-11eb-8506-7855edbc11e0.png)
 
-# Run the API
+## Run the API
 
 `http://localhost:8080/swagger-ui.html`
 
-# API test
+## API test
 ![image](https://user-images.githubusercontent.com/65916297/123186639-f4979d00-d46e-11eb-93b1-d1f282f05b56.png)
 
